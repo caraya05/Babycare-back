@@ -14,7 +14,7 @@ class ScheduleViewSet(viewsets.ModelViewSet):
 
     @action(detail=False, url_path='schedule-available', methods=['get'], url_name='schedule_available')
     def schedule_available(self, request):
-        queryset = Schedule.objects.exclude(state=True)
+        queryset = Schedule.objects.exclude(state=False)
         serializer = self.get_serializer(queryset, many=True)
         return Response(serializer.data)
 
