@@ -1,0 +1,1 @@
+from configurations.viewset.city_viewset import CityViewSet
