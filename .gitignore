@@ -5,7 +5,8 @@
 *.py[cod]
 *$py.class
 *.pyc
-
+# PYTHON FILES
+__pycache__/
 __pypackages__/
 
 .env
@@ -15,6 +16,7 @@ src/static/
 
 */__pycache__/
 
+
 # NGINX LOGS
 nginx/nginx-loc/logs/
 nginx/nginx-pro/logs/
@@ -22,5 +24,11 @@ nginx/nginx-pro/logs/
 # POSTGRES PGDATA
 postgres/\.pgdata/
 postgres/\.pgdata-test/
-!/postgres/data.zip
+
+# DJANGO MIGRATIONS
+src/celeryev\.pid
+
+src/celerybeat-schedule
+
+src/media/
 .postgres/
