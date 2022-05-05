@@ -12,5 +12,5 @@ def update_state_schedule(
 ):
     schedule = Schedule.objects.filter(id=instance.schedule.id).first()
     schedule.state = False
-    print(schedule)
+    print('----------', schedule)
     schedule.save()
