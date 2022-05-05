@@ -12,7 +12,7 @@ class Schedule(Audit):
     end_hour: time = models.TimeField(_('End hour'))
     baby_sister: Optional = models.ForeignKey(to='babysisters.BabySister', verbose_name=_('Baby sister'),
                                               on_delete=models.CASCADE)
-    state: bool = models.BooleanField(_('State'), default=False)
+    state: bool = models.BooleanField(_('State'), default=True)
 
     class Meta:
         verbose_name = _('Schedule')
