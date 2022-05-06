@@ -8,9 +8,17 @@ Esto genera malestar en los clientes y pérdidas para la empresa, lo que hace de
 
 ### Modelo bases de datos
 
-![Alt  text](https://drive.google.com/file/d/1Mm17Xrf9L4LC8GjfoTK-lBA9trjaXHhA/view?usp=sharing)
+![Image text](doc/babycare.png)
 
-# Crear Documentacion
+### Sprint
+
+![Image text](doc/sprint.png)
+
+
+### Estructura
+
+![Image text](doc/estructura.jpg)
+
 
 # Variables de entorno
 * Archivo de varibles de entorno .env
