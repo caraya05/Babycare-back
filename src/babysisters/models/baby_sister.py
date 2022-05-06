@@ -1,5 +1,6 @@
 from datetime import date
 
+from crum import get_current_user
 from django.db import models
 from django.utils.translation import gettext_lazy as _
 from loducode_utils.models.audit import Audit
@@ -19,4 +20,3 @@ class BabySister(Audit):
 
     def __str__(self):
         return f'{self.name} {self.last_name}'
-
