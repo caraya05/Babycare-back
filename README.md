@@ -1,17 +1,17 @@
-# Proyecto Base para desarrollo del backend con docker
+# Proyecto Baby Care
 
-Este es una base o estructura basica para implementar en los proyectos version de python 3.7, usando todo con docker
+### Descripcion del problema
 
-`Para correr el proyecto primero se comenta ciudad en person luego migraciones, si las migraciones se eliminaron`
+BabyCare es un emprendimiento que busca brindar una alternativa de ingresos a jóvenes estudiantes mediante la prestación de servicios de niñera a domicilio por horas.
+Actualmente las solicitudes de servicio se realizan por teléfono, debido a la alta demanda con frecuencia los clientes realizan solicitudes en fechas / horas similares lo que causa que no se cuente con disponibilidad de personal, esto debido a que existen días de la semana en los que se presenta más demanda que otros (los viernes por ejemplo), adicionalmente es posible que algunas de las niñeras no cuenten con disponibilidad debido a actividades académicas o personales.
+Esto genera malestar en los clientes y pérdidas para la empresa, lo que hace deseable contar con algún mecanismo que permita conocer la disponibilidad del personal y permitir a los clientes solicitar el servicio a partir de dicha disponibilidad. Para el cliente debe ser totalmente transparente quien le prestará el servicio, solo requiere tener la certeza de que el turno estará cubierto. 
+
+### Modelo bases de datos
+
+![Alt  text](https://drive.google.com/file/d/1Mm17Xrf9L4LC8GjfoTK-lBA9trjaXHhA/view?usp=sharing)
 
 # Crear Documentacion
-1. Crear una carpeta en la raiz del proyecto que se llame doc
-2. entrar en esa carpeta y dar el siguiente comando `sphinx-quickstart`
-3. Se creara unos archivos, luego buscamos en esa carpeta en el archivo `conf.py` pegamos la estructura que tenemos 
-4. luego ejecutamos el siguiente comando `sphinx-apidoc -o modules ..`
-5. Recordar que todo se llama y se organiza en index.rst
-6. luego hacer `make html`.
-7. Guia --> `https://davidcasr.medium.com/c%C3%B3mo-documentar-un-proyecto-django-con-sphinx-80e4a090896e`
+
 # Variables de entorno
 * Archivo de varibles de entorno .env
 ```
@@ -99,22 +99,10 @@ make statics
 
 ### inicio 
 
-1. install virtualenv
-    * abre una terminal y digita
-      `apt-get install virtualenv`
-    
 
-2. crear entorno virtual 
-    * Dentro de la terminal digita `virtualenv env -p python3`
-    
 
-3. Entrar al entorno y activarlo    
-    * Dentro del directorio que se creo
-      el entorno escribir `source env/bin/activate
-      
-
-4. Iniciar todo el cargue del sistema
-   * `make start` solo se usa una vez este carga todas
+1. Iniciar todo el cargue del sistema
+   * `make build` solo se usa una vez este carga todas
    las dependencias del sistema, requerimientos, datos, apps
      etc.
   
