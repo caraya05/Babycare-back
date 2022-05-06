@@ -19,3 +19,4 @@ class BabySister(Audit):
 
     def __str__(self):
         return f'{self.name} {self.last_name}'
+
