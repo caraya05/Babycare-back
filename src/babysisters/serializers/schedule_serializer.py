@@ -13,7 +13,7 @@ class ScheduleSerializer(AuditSerializer):
 class ScheduleListSerializer(AuditSerializer):
     class Meta:
         model = Schedule
-        fields = ('id', 'day', 'start_hour', 'end_hour', 'baby_sister',)
+        fields = ('id', 'day', 'start_hour', 'end_hour', 'baby_sister', 'state')
 
 
 class ScheduleCreateSerializer(AuditSerializer):

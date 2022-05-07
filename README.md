@@ -24,10 +24,10 @@ Esto genera malestar en los clientes y pérdidas para la empresa, lo que hace de
 * Archivo de varibles de entorno .env
 ```
 #Django DB
-POSTGRES_DB=backend
-POSTGRES_USER=postgres
-POSTGRES_PASSWORD=123456
-POSTGRES_HOST=127.0.0.1
+POSTGRES_DB=baby_care
+POSTGRES_USER=baby_care_user
+POSTGRES_PASSWORD=baby_care.
+POSTGRES_HOST=postgres
 POSTGRES_PORT=5432
 
 #Config django
@@ -44,11 +44,12 @@ EMAIL_HOST_PASSWORD=CamiloSuarez04
 DEFAULT_FROM_EMAIL=pruebas.jcsq@gmail.com
 
 #Db_test
-DB_NAME_TEST=backend
-DB_USER_TEST=postgres
-DB_PASS_TEST=123456
-DB_SERVICE_TEST=127.0.0.1
+DB_NAME_TEST=baby_care
+DB_USER_TEST=baby_care_user
+DB_PASS_TEST=baby_care.
+DB_SERVICE_TEST=postgres
 DB_PORT_TEST=5432
+
 ```
 # Makefile
 En el se encuentran comandos configurados para la facilidad, 
